@@ -1,0 +1,85 @@
+Execute the playwright tests: npx playwright test
+
+Creating the test file in playwright:
+Demo.spec.ts ==> spec: specification i.e testing purpose
+			Ts: typescript file
+We need to import 2 functions test and expect from @playwright/test
+
+Execute test from particular file in headless mode: npx playwright test demo.spec.ts 
+Execute test from particular file in actual browser: npx playwright test demo.spec.ts --headed
+ npx playwright test demo.spec.ts --project=chromium
+npx playwright test demo.spec.ts --project=chromium --headed
+
+Explanation of the Results which are generated after execution
+Running 1 test using 1 worker
+Worker means: Helper or assistant which helps to execute scripts for you
+You -> Worker 1 , Friend -> Worker 2
+100TCs are split between as 50, 50
+
+Playwright assigns the workers to the execution based on your computers CPU power
+
+But we can also use the worker as per our need
+
+
+npx playwright test --workers=3     Running 9 tests using 3 workers ==> Parallelism
+npx playwright test demo.spec.ts --headed --workers=3      
+npx playwright test demo.spec.ts --headed --project=firefox --workers=3
+			
+LOCATORS:
+PLAYWRIGHT RECOMENDED
+page.getByRole:
+Use page.getByRole for buttons, checkboxes, radiobuttons, links and  inputTextFields and it should have Role attribute and it should have clear and visible text-Label and area-label .
+	
+	Await page.getByRole('role',{name : 'textvalue'}).fill('Laptop');
+	Await page.getByRole('searchbox',{name : 'Search Amazon.in'}).click();
+	
+	<button type="submit" class="a-button-text" alt="Continue shopping">Continue shopping</button>
+	Await page.getByRole('button',{name : 'Continue shopping'})
+
+page.getByText:
+Select based on the Visible Text, for the elements which are enclosed in <a> tag or <span> tag. The elements which have open and closed tags
+await page.getByText('visible Text');
+await page.getByText('Keep Shopping for')
+
+page.getByLabel():
+We can use it when we have label tag and for attribute:
+<label for="name" class="col-sm-3 col-form-label">Name:</label>
+await page.getByLabel('Name:')
+
+page.getByPlaceholder()
+We can use for the input fields by there placeholder text.
+await page.getByPlaceholder('name@example.com')
+
+page.getByAltText()
+We can use for the fields by there alt text.
+await page.getByAltText('Refrigerators').click();
+
+Page.getByTestId()
+We can use for the attribute by there data-testid value.
+await page.getByTestId('main-menu-trigger').click();
+
+Page.getByTestId()
+We can use for the attribute by there title value.
+await page.getByTitle('Keep selected tool active after drawing — Q').click();
+
+CSS LOCATORS
+1.Tag	Page.locator("tagName")
+2.id	Page.locator("#idName")
+3.class	Page.locator(".className")
+	HTML==> Class="className1 className2 className3"
+	Page.locator(".className1.className2.className3")
+4.attribute	Page.locator("tagName[attribute='value']")
+
+XPATH LOCATORS
+1.By Attribute	Page.locator("//tag[@attribute='value']")
+2.By Text	Page.locator("//tagName[text()='value']")
+
+
+
+RECORDING SCRIPTS IN PLAYWRIGHT AND CODEGEN FUNCTIONS
+
+npx playwright codegen ==> launches playwright inspector
+npx playwright codegen https://www.amazon.in/
+npx playwright codegen https://www.amazon.in/ --output=tests/demo2.spec.ts ==> records steps and copy to a file
+npx playwright codegen https://www.amazon.in/ --viewport-size="800, 600"  ==> sets the size of the browser window.
+npx playwright codegen https://www.amazon.in/ --device="iPhone 12" ==> Emulation of various devices
