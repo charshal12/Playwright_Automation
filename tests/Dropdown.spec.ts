@@ -50,7 +50,7 @@ await expect(page.locator(".oxd-multiselect-chips-area span")).toHaveText("Pendi
 
 })
 
-test.only('Searchable Dropdown', async ({ page }) => {
+test('Searchable Dropdown', async ({ page }) => {
 await page.goto('https://www.amazon.in/');
 await page.getByPlaceholder('Search Amazon.in').fill('book');
 await page.waitForSelector(".left-pane-results-container");

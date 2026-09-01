@@ -84,7 +84,7 @@ test('Datepicker 4 ', async ({ page }) => {
 
 });
 
-test.only('Datepicker 5 ', async ({ page }) => { 
+test('Datepicker 5 ', async ({ page }) => { 
     const targetYear = 2027;
     const targetMonth = "May";
     const targetDate = "2";

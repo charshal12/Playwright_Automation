@@ -49,7 +49,7 @@ if(frame2) {
 
 
 
-test.only('Frames Using Index', async ({ page }) => {
+test('Frames Using Index', async ({ page }) => {
 await page.goto('https://testpages.eviltester.com/pages/embedded-pages/frames/');
 
 //page.frames()

@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test.only('InputBox RadioButton Test',async ({ page }) =>
+test('InputBox RadioButton Test',async ({ page }) =>
 {
 await page.goto('https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php');
 await page.locator("#headingOne .accordion-button").click();
