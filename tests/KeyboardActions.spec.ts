@@ -39,7 +39,7 @@ console.log(emailValue);
 await page.waitForTimeout(5000);
 });
 
-test.only('Keyboard Actions: Shift Down', async ({ page }) => {
+test('Keyboard Actions: Shift Down', async ({ page }) => {
 await page.goto('https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php');
 await page.locator('#name').focus();
 await page.keyboard.down('Shift');
