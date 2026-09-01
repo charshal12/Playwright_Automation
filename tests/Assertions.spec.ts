@@ -1,5 +1,5 @@
 import {test, expect} from 'playwright/test';
-test ('Assertions ', async ({ page }) => {
+test ('Assertions @Smoke', async ({ page }) => {
 await page.goto('https://www.amazon.in/');
 await page.waitForTimeout(5000);
 //await page.getByRole('button',{name : 'Continue shopping'}).click();

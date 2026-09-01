@@ -1,0 +1,274 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\Study\\Playwright_Automation\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "LoginToSauceDemo.spec.ts",
+      "--project=chromium",
+      "--headed"
+    ],
+    "configFile": "D:\\Study\\Playwright_Automation\\playwright.config.ts",
+    "rootDir": "D:/Study/Playwright_Automation/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/Study/Playwright_Automation/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/Study/Playwright_Automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/Study/Playwright_Automation/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/Study/Playwright_Automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/Study/Playwright_Automation/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/Study/Playwright_Automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "My-Report",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "Myreport.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "MyJunitReport.xml"
+        }
+      ],
+      [
+        "D:\\Study\\Playwright_Automation\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "LoginToSauceDemo.spec.ts",
+      "file": "LoginToSauceDemo.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "User should be able to login",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6684,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Total products Found: 6\n"
+                    },
+                    {
+                      "text": "Product 1 title : Sauce Labs Backpack\n"
+                    },
+                    {
+                      "text": "Product 1 Description : carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.\n"
+                    },
+                    {
+                      "text": "Product 1 price : $29.99\n"
+                    },
+                    {
+                      "text": "Product 1 addToCart : Add to cart\n"
+                    },
+                    {
+                      "text": "Product 2 title : Sauce Labs Bike Light\n"
+                    },
+                    {
+                      "text": "Product 2 Description : A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included.\n"
+                    },
+                    {
+                      "text": "Product 2 price : $9.99\n"
+                    },
+                    {
+                      "text": "Product 2 addToCart : Add to cart\n"
+                    },
+                    {
+                      "text": "Product 3 title : Sauce Labs Bolt T-Shirt\n"
+                    },
+                    {
+                      "text": "Product 3 Description : Get your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt.\n"
+                    },
+                    {
+                      "text": "Product 3 price : $15.99\n"
+                    },
+                    {
+                      "text": "Product 3 addToCart : Add to cart\n"
+                    },
+                    {
+                      "text": "Product 4 title : Sauce Labs Fleece Jacket\n"
+                    },
+                    {
+                      "text": "Product 4 Description : It's not every day that you come across a midweight quarter-zip fleece jacket capable of handling everything from a relaxing day outdoors to a busy day at the office.\n"
+                    },
+                    {
+                      "text": "Product 4 price : $49.99\n"
+                    },
+                    {
+                      "text": "Product 4 addToCart : Add to cart\n"
+                    },
+                    {
+                      "text": "Product 5 title : Sauce Labs Onesie\n"
+                    },
+                    {
+                      "text": "Product 5 Description : Rib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unravel.\n"
+                    },
+                    {
+                      "text": "Product 5 price : $7.99\n"
+                    },
+                    {
+                      "text": "Product 5 addToCart : Add to cart\n"
+                    },
+                    {
+                      "text": "Product 6 title : Test.allTheThings() T-Shirt (Red)\n"
+                    },
+                    {
+                      "text": "Product 6 Description : This classic Sauce Labs t-shirt is perfect to wear when cozying up to your keyboard to automate a few tests. Super-soft and comfy ringspun combed cotton.\n"
+                    },
+                    {
+                      "text": "Product 6 price : $15.99\n"
+                    },
+                    {
+                      "text": "Product 6 addToCart : Add to cart\n"
+                    },
+                    {
+                      "text": "\u001b[33m6\u001b[39m\n"
+                    },
+                    {
+                      "text": "Sauce Labs Backpack\n"
+                    },
+                    {
+                      "text": "Sauce Labs Bike Light\n"
+                    },
+                    {
+                      "text": "Sauce Labs Bolt T-Shirt\n"
+                    },
+                    {
+                      "text": "Sauce Labs Fleece Jacket\n"
+                    },
+                    {
+                      "text": "Sauce Labs Onesie\n"
+                    },
+                    {
+                      "text": "Product : Sauce Labs Onesie is the product added to the cart\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-01T13:04:31.006Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Study\\Playwright_Automation\\test-results\\LoginToSauceDemo-User-should-be-able-to-login-chromium\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2ddee8d5b12b805a20ba-119d38a43814ba07a8cf",
+          "file": "LoginToSauceDemo.spec.ts",
+          "line": 7,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-01T13:04:30.573Z",
+    "duration": 8603.641000000001,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

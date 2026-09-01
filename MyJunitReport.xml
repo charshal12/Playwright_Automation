@@ -1,0 +1,43 @@
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="8.603641000000001">
+<testsuite name="LoginToSauceDemo.spec.ts" timestamp="2026-09-01T13:04:30.621Z" hostname="chromium" tests="1" failures="0" skipped="0" time="6.684" errors="0">
+<testcase name="User should be able to login" classname="LoginToSauceDemo.spec.ts" time="6.684">
+<system-out>
+<![CDATA[Total products Found: 6
+Product 1 title : Sauce Labs Backpack
+Product 1 Description : carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.
+Product 1 price : $29.99
+Product 1 addToCart : Add to cart
+Product 2 title : Sauce Labs Bike Light
+Product 2 Description : A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included.
+Product 2 price : $9.99
+Product 2 addToCart : Add to cart
+Product 3 title : Sauce Labs Bolt T-Shirt
+Product 3 Description : Get your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt.
+Product 3 price : $15.99
+Product 3 addToCart : Add to cart
+Product 4 title : Sauce Labs Fleece Jacket
+Product 4 Description : It's not every day that you come across a midweight quarter-zip fleece jacket capable of handling everything from a relaxing day outdoors to a busy day at the office.
+Product 4 price : $49.99
+Product 4 addToCart : Add to cart
+Product 5 title : Sauce Labs Onesie
+Product 5 Description : Rib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unravel.
+Product 5 price : $7.99
+Product 5 addToCart : Add to cart
+Product 6 title : Test.allTheThings() T-Shirt (Red)
+Product 6 Description : This classic Sauce Labs t-shirt is perfect to wear when cozying up to your keyboard to automate a few tests. Super-soft and comfy ringspun combed cotton.
+Product 6 price : $15.99
+Product 6 addToCart : Add to cart
+[33m6[39m
+Sauce Labs Backpack
+Sauce Labs Bike Light
+Sauce Labs Bolt T-Shirt
+Sauce Labs Fleece Jacket
+Sauce Labs Onesie
+Product : Sauce Labs Onesie is the product added to the cart
+
+[[ATTACHMENT|test-results\LoginToSauceDemo-User-should-be-able-to-login-chromium\video.webm]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
